@@ -8,7 +8,6 @@ channels:
 dependencies:
 # core packages
   - python
-  - nbgitpuller
 # packages used widely
   - matplotlib
   - numpy
@@ -38,6 +37,8 @@ dependencies:
 # vpython also needs a different Jupyter kernel 
 # so using it in MyBinder may be more trouble than it's worth
 #  - vpython
+#
+# some packages need pip, not conda
   - pip:
+    - nbgitpuller
     - astroml
-# prefix: /home/colin/anaconda3/envs/ml
