@@ -1,0 +1,4 @@
+#!/bin/bash
+# Commands to be run as an entrypoint when a MyBinder container is started
+
+jupyter serverextension enable --py nbgitpuller --sys-prefix
