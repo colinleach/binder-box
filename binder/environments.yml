@@ -1,0 +1,43 @@
+name: astro
+channels:
+  - defaults
+  - conda-forge
+  - astropy
+  - tboch
+  - vpython
+dependencies:
+# core packages
+  - python
+  - nbgitpuller
+# packages used widely
+  - matplotlib
+  - numpy
+  - scipy
+  - pandas
+  - astropy
+  - sympy
+  - astroquery
+# packages used in a single notebook
+  - altair
+  - aplpy
+  - bokeh
+  - cufflinks-py
+  - dask
+  - h5py
+  - hdf5
+  - healpy
+  - ipyaladin
+  - plotly
+  - pytables
+  - pythreejs
+  - seaborn
+  - vaex
+  - vaex-astro
+  - vega
+  - vispy
+# vpython also needs a different Jupyter kernel 
+# so using it in MyBinder may be more trouble than it's worth
+#  - vpython
+  - pip:
+    - astroml
+# prefix: /home/colin/anaconda3/envs/ml
